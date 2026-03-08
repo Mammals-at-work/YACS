@@ -14,8 +14,7 @@ on:
 jobs:
   test:
     name: Run Tests
-    runs-on: self-hosted
-
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: cli
