@@ -1,8 +1,10 @@
-# Tech Debt Hunter
+---
+name: tech-debt-hunter
+description: Identifica y prioriza la deuda técnica de un archivo o módulo. Úsalo cuando el usuario pregunte por deuda técnica, calidad del código o qué refactorizar primero.
+argument-hint: "[archivo o módulo]"
+---
 
-Identifica y prioriza la deuda técnica del código o módulo indicado.
-
-## Comportamiento
+Identifica y prioriza la deuda técnica de: $ARGUMENTS
 
 Analiza el código y clasifica cada problema encontrado según su impacto real en el equipo y el negocio:
 

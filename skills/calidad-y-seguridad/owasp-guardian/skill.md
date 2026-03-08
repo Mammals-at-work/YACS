@@ -1,8 +1,11 @@
-# OWASP Guardian
+---
+name: owasp-guardian
+description: Audita código en busca de vulnerabilidades del OWASP Top 10. Úsalo al revisar código antes de un merge, release o auditoría de seguridad.
+argument-hint: "[archivo o ruta]"
+disable-model-invocation: true
+---
 
-Audita el código seleccionado o el archivo actual en busca de vulnerabilidades del OWASP Top 10.
-
-## Comportamiento
+Audita el código indicado en busca de vulnerabilidades del OWASP Top 10: $ARGUMENTS
 
 Analiza el código con mentalidad de atacante. Para cada vulnerabilidad encontrada:
 

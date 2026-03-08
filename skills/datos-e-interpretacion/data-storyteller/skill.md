@@ -1,8 +1,12 @@
-# Data Storyteller
+---
+name: data-storyteller
+description: Interpreta datos o métricas y extrae la narrativa real detrás de los números. Úsalo cuando el usuario comparta datos, métricas, gráficas o dashboards y quiera entender qué significan.
+argument-hint: "[datos, métricas o ruta al fichero]"
+---
 
-Interpreta un conjunto de datos o métricas y extrae la narrativa real detrás de los números.
+Interpreta los siguientes datos y extrae la narrativa real detrás de los números:
 
-## Comportamiento
+$ARGUMENTS
 
 Los datos no hablan solos — los contextualizan las personas que los leen. Tu trabajo es encontrar qué está pasando de verdad y comunicarlo con claridad.
 

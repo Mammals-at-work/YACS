@@ -1,10 +1,13 @@
-# ADR Writer
+---
+name: adr-writer
+description: Genera un Architecture Decision Record (ADR) en formato Markdown a partir de una decisión técnica. Úsalo cuando el usuario tome una decisión de arquitectura que deba quedar documentada.
+argument-hint: "[descripción de la decisión técnica]"
+disable-model-invocation: true
+---
 
-Genera un Architecture Decision Record (ADR) a partir de una decisión técnica descrita por el usuario.
+Genera un ADR completo y listo para incluir en el repositorio sobre la siguiente decisión:
 
-## Comportamiento
-
-A partir del contexto y la decisión indicada, produce un ADR completo en formato Markdown listo para incluir en el repositorio.
+$ARGUMENTS
 
 ## Formato de salida
 
@@ -41,7 +44,7 @@ A partir del contexto y la decisión indicada, produce un ADR completo en format
 - [Links relevantes, tickets, PR, documentación]
 ```
 
-## Instrucciones adicionales
+## Instrucciones
 
 - Si el usuario no especifica alternativas, propón al menos dos razonables.
 - Si la decisión tiene implicaciones de seguridad o rendimiento, añade una sección "Riesgos".
