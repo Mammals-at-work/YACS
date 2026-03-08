@@ -1,6 +1,6 @@
 {
-  "name": "@munchkin09/yacs",
-  "version": "0.8.7",
+  "name": "@mammals-at-work/yacs",
+  "version": "1.0.0",
   "description": "Interactive CLI installer for Y.A.C.S. (Yet Another Claude Skills)",
   "type": "module",
   "bin": {
@@ -12,7 +12,7 @@
     "directory": "cli"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "scripts": {
