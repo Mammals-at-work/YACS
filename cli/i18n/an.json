@@ -23,5 +23,9 @@
   "installationCancelled": "❌ Instalación cansela'a",
   "operationCancelled": "❌ Operación cansela'a",
   "invalidSelection": "Selesión inválida",
-  "error": "Error"
+  "error": "Error",
+  "unattendedMissingPath": "La bandera --path es requerida en molo asistío",
+  "unattendedMissingSkills": "La bandera --skills es requerida en molo asistío",
+  "unattendedUnknownSkill": "Skill o categoría desconócia",
+  "unattendedNoSkillsMatched": "La espesifikasión --skills no emparejó con ningún skill"
 }

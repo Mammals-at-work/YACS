@@ -23,5 +23,9 @@
   "installationCancelled": "❌ Instal·lació cancel·lada",
   "operationCancelled": "❌ Operació cancel·lada",
   "invalidSelection": "Selecció inválida",
-  "error": "Error"
+  "error": "Error",
+  "unattendedMissingPath": "El flag --path és necessari en mode desatès",
+  "unattendedMissingSkills": "El flag --skills és necessari en mode desatès",
+  "unattendedUnknownSkill": "Skill o categoria desconegut",
+  "unattendedNoSkillsMatched": "La especificació --skills no va coincidir amb cap skill"
 }

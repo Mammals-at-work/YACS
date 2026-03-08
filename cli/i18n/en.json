@@ -23,5 +23,9 @@
   "installationCancelled": "❌ Installation cancelled",
   "operationCancelled": "❌ Operation cancelled",
   "invalidSelection": "Invalid selection",
-  "error": "Error"
+  "error": "Error",
+  "unattendedMissingPath": "The --path flag is required in unattended mode",
+  "unattendedMissingSkills": "The --skills flag is required in unattended mode",
+  "unattendedUnknownSkill": "Unknown skill or category",
+  "unattendedNoSkillsMatched": "The --skills specification matched no skills"
 }

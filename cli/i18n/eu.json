@@ -23,5 +23,9 @@
   "installationCancelled": "❌ Instalazioa utzia",
   "operationCancelled": "❌ Eragiketa utzia",
   "invalidSelection": "Hautaketa baliogabea",
-  "error": "Akatsa"
+  "error": "Akatsa",
+  "unattendedMissingPath": "--path bandiera nahitaezkoa da entzuteko moduan",
+  "unattendedMissingSkills": "--skills bandiera nahitaezkoa da entzuteko moduan",
+  "unattendedUnknownSkill": "Skill edo kategoria ezezaguna",
+  "unattendedNoSkillsMatched": "--skills zehaztapenak ez du skillrik bat egin"
 }

@@ -23,5 +23,9 @@
   "installationCancelled": "❌ Instalación cancelada",
   "operationCancelled": "❌ Operación cancelada",
   "invalidSelection": "Selección inválida",
-  "error": "Error"
+  "error": "Error",
+  "unattendedMissingPath": "El flag --path es requerido en modo desatendido",
+  "unattendedMissingSkills": "El flag --skills es requerido en modo desatendido",
+  "unattendedUnknownSkill": "Skill o categoría desconocido",
+  "unattendedNoSkillsMatched": "La especificación --skills no coincidió con ningún skill"
 }

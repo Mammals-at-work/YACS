@@ -23,5 +23,9 @@
   "installationCancelled": "❌ インストールがキャンセルされました",
   "operationCancelled": "❌ 操作がキャンセルされました",
   "invalidSelection": "無効な選択",
-  "error": "エラー"
+  "error": "エラー",
+  "unattendedMissingPath": "--path フラグは無人モードで必須です",
+  "unattendedMissingSkills": "--skills フラグは無人モードで必須です",
+  "unattendedUnknownSkill": "不明なスキルまたはカテゴリー",
+  "unattendedNoSkillsMatched": "--skills の指定がスキルと一致しません"
 }
