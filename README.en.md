@@ -71,10 +71,10 @@ The CLI includes a complete test suite that validates:
 
 ```bash
 cd cli
-node test-runner.js
+npm test
 ```
 
-Expected result: **44 tests passing** with 100% success rate.
+Expected result: **31 tests passing** with 100% success rate.
 
 ---
 

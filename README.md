@@ -40,10 +40,10 @@ El CLI incluye un suite de tests completo que valida:
 
 ```bash
 cd cli
-node test-runner.js
+npm test
 ```
 
-Resultado esperado: **44 tests pasando** con 100% de éxito.
+Resultado esperado: **31 tests pasando** con 100% de éxito.
 
 ---
 

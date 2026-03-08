@@ -53,10 +53,10 @@ CLIには完全なテストスイートが含まれています:
 
 ```bash
 cd cli
-node test-runner.js
+npm test
 ```
 
-期待される結果: **44 tests passing** (100%成功率)
+期待される結果: **31 tests passing** (100%成功率)
 
 ---
 
