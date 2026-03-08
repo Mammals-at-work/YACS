@@ -1,21 +1,20 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { expect } from 'chai';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SKILLS_ROOT = path.join(__dirname, '../../skills');
 
 describe('Skills Directory', () => {
   it('should have skills directory', () => {
-    expect(fs.existsSync(SKILLS_ROOT)).to.be.true;
+    expect(fs.existsSync(SKILLS_ROOT)).toBe(true);
   });
 
   it('should have skill categories', () => {
     const categories = fs.readdirSync(SKILLS_ROOT).filter((f) => {
       return fs.statSync(path.join(SKILLS_ROOT, f)).isDirectory();
     });
-    expect(categories.length).to.be.greaterThan(0);
+    expect(categories.length).toBeGreaterThan(0);
   });
 
   it('should have expected categories', () => {
@@ -32,7 +31,7 @@ describe('Skills Directory', () => {
     ];
 
     expectedCategories.forEach((cat) => {
-      expect(categories).to.include(cat);
+      expect(categories).toContain(cat);
     });
   });
 
@@ -49,7 +48,7 @@ describe('Skills Directory', () => {
 
       skills.forEach((skill) => {
         const skillMdPath = path.join(categoryPath, skill, 'SKILL.md');
-        expect(fs.existsSync(skillMdPath)).to.be.true;
+        expect(fs.existsSync(skillMdPath)).toBe(true);
       });
     });
   });
@@ -68,7 +67,7 @@ describe('Skills Directory', () => {
       totalSkills += skills.length;
     });
 
-    expect(totalSkills).to.be.at.least(15);
+    expect(totalSkills).toBeGreaterThanOrEqual(15);
   });
 });
 
@@ -76,14 +75,14 @@ describe('i18n Directory', () => {
   const I18N_ROOT = path.join(__dirname, '../i18n');
 
   it('should have i18n directory', () => {
-    expect(fs.existsSync(I18N_ROOT)).to.be.true;
+    expect(fs.existsSync(I18N_ROOT)).toBe(true);
   });
 
   it('should have translation files for all languages', () => {
     const languages = ['es', 'en', 'ca', 'eu', 'gl', 'an', 'ja'];
     languages.forEach((lang) => {
       const filePath = path.join(I18N_ROOT, `${lang}.json`);
-      expect(fs.existsSync(filePath)).to.be.true;
+      expect(fs.existsSync(filePath)).toBe(true);
     });
   });
 
@@ -92,7 +91,7 @@ describe('i18n Directory', () => {
     languages.forEach((lang) => {
       const filePath = path.join(I18N_ROOT, `${lang}.json`);
       const content = fs.readFileSync(filePath, 'utf-8');
-      expect(() => JSON.parse(content)).not.to.throw();
+      expect(() => JSON.parse(content)).not.toThrow();
     });
   });
 
@@ -109,7 +108,7 @@ describe('i18n Directory', () => {
 
     const firstLangKeys = allKeys[languages[0]];
     languages.slice(1).forEach((lang) => {
-      expect(allKeys[lang]).to.deep.equal(firstLangKeys);
+      expect(allKeys[lang]).toEqual(firstLangKeys);
     });
   });
 
@@ -117,6 +116,6 @@ describe('i18n Directory', () => {
     const filePath = path.join(I18N_ROOT, 'en.json');
     const content = fs.readFileSync(filePath, 'utf-8');
     const translation = JSON.parse(content);
-    expect(Object.keys(translation).length).to.be.at.least(20);
+    expect(Object.keys(translation).length).toBeGreaterThanOrEqual(20);
   });
 });

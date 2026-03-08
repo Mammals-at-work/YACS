@@ -1,5 +1,0 @@
-{
-  "spec": "__tests__/**/*.test.js",
-  "timeout": 5000,
-  "exit": true
-}

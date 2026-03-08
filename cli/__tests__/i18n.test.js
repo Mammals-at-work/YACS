@@ -1,46 +1,45 @@
 import { t, setLanguage, getCurrentLanguage, getSupportedLanguages, SUPPORTED_LANGS } from '../i18n.js';
-import { expect } from 'chai';
 
 describe('i18n Module', () => {
   describe('Supported Languages', () => {
     it('should have 7 languages', () => {
       const langs = getSupportedLanguages();
-      expect(Object.keys(langs)).to.have.lengthOf(7);
+      expect(Object.keys(langs)).toHaveLength(7);
     });
 
     it('should have Spanish', () => {
       const langs = getSupportedLanguages();
-      expect(langs).to.have.property('es');
+      expect(langs).toHaveProperty('es');
     });
 
     it('should have English', () => {
       const langs = getSupportedLanguages();
-      expect(langs).to.have.property('en');
+      expect(langs).toHaveProperty('en');
     });
 
     it('should have Catalan', () => {
       const langs = getSupportedLanguages();
-      expect(langs).to.have.property('ca');
+      expect(langs).toHaveProperty('ca');
     });
 
     it('should have Basque', () => {
       const langs = getSupportedLanguages();
-      expect(langs).to.have.property('eu');
+      expect(langs).toHaveProperty('eu');
     });
 
     it('should have Galician', () => {
       const langs = getSupportedLanguages();
-      expect(langs).to.have.property('gl');
+      expect(langs).toHaveProperty('gl');
     });
 
     it('should have Andalusian', () => {
       const langs = getSupportedLanguages();
-      expect(langs).to.have.property('an');
+      expect(langs).toHaveProperty('an');
     });
 
     it('should have Japanese', () => {
       const langs = getSupportedLanguages();
-      expect(langs).to.have.property('ja');
+      expect(langs).toHaveProperty('ja');
     });
   });
 
@@ -48,8 +47,8 @@ describe('i18n Module', () => {
     it('all languages should have name and flag', () => {
       const langs = getSupportedLanguages();
       Object.entries(langs).forEach(([code, lang]) => {
-        expect(lang).to.have.property('name');
-        expect(lang).to.have.property('flag');
+        expect(lang).toHaveProperty('name');
+        expect(lang).toHaveProperty('flag');
       });
     });
   });
@@ -57,17 +56,17 @@ describe('i18n Module', () => {
   describe('Set Language', () => {
     it('should set Spanish', () => {
       const result = setLanguage('es');
-      expect(result).to.be.true;
+      expect(result).toBe(true);
     });
 
     it('should return Spanish as current', () => {
       setLanguage('es');
-      expect(getCurrentLanguage()).to.equal('es');
+      expect(getCurrentLanguage()).toBe('es');
     });
 
     it('should reject invalid language', () => {
       const result = setLanguage('invalid');
-      expect(result).to.be.false;
+      expect(result).toBe(false);
     });
   });
 
@@ -75,12 +74,12 @@ describe('i18n Module', () => {
     it('English title should contain YACS', () => {
       setLanguage('en');
       const title = t('title');
-      expect(title).to.include('YACS');
+      expect(title).toContain('YACS');
     });
 
     it('should return default value for nonexistent key', () => {
       const result = t('nonexistent', 'default');
-      expect(result).to.equal('default');
+      expect(result).toBe('default');
     });
   });
 
@@ -122,7 +121,7 @@ describe('i18n Module', () => {
             allKeysFound = false;
           }
         });
-        expect(allKeysFound).to.be.true;
+        expect(allKeysFound).toBe(true);
       });
     });
   });
