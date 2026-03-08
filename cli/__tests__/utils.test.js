@@ -23,11 +23,11 @@ describe('Skills Directory', () => {
     });
 
     const expectedCategories = [
-      'calidad-y-seguridad',
-      'desarrollo',
-      'analisis-diseno-y-arquitectura',
-      'debate-y-confrontacion-de-ideas',
-      'datos-e-interpretacion',
+      'quality-and-security',
+      'development',
+      'analisis-design-architecture',
+      'idea-confrontation-and-debate',
+      'data-and-interpretation',
     ];
 
     expectedCategories.forEach((cat) => {

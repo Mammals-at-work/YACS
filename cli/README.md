@@ -72,11 +72,11 @@ Los skills se copiarán mantiendo la estructura original:
 
 ```
 ~/.claude/skills/  (o tu ruta personalizada)
-├── analisis-diseno-y-arquitectura/
+├── analisis-design-architecture/
 │   ├── adr-writer/
 │   ├── architecture-spark/
 │   └── pattern-finder/
-├── calidad-y-seguridad/
+├── quality-and-security/
 │   ├── llm-safety-checks/
 │   ├── owasp-guardian/
 │   ├── quality-spark/
@@ -107,13 +107,13 @@ Categorías: 5
 Usa ↑↓ para navegar, ESPACIO para marcar/desmarcar
 
 ? Selecciona los skills a instalar: (Press <space> to select, <a> to toggle all, <i> to invert selection)
-❯◉ adr-writer (analisis-diseno-y-arquitectura) - Generador de ADRs
- ○ architecture-spark (analisis-diseno-y-arquitectura)
- ◉ pattern-finder (analisis-diseno-y-arquitectura) - Identificador de patrones
- ○ llm-safety-checks (calidad-y-seguridad)
- ◉ owasp-guardian (calidad-y-seguridad) - Validación de seguridad OWASP
- ○ quality-spark (calidad-y-seguridad)
- ○ task-flow-planner (calidad-y-seguridad)
+❯◉ adr-writer (analisis-design-architecture) - Generador de ADRs
+ ○ architecture-spark (analisis-design-architecture)
+ ◉ pattern-finder (analisis-design-architecture) - Identificador de patrones
+ ○ llm-safety-checks (quality-and-security)
+ ◉ owasp-guardian (quality-and-security) - Validación de seguridad OWASP
+ ○ quality-spark (quality-and-security)
+ ○ task-flow-planner (quality-and-security)
  ...
 (Move up and down to reveal more choices)
 
@@ -124,11 +124,11 @@ Usa ↑↓ para navegar, ESPACIO para marcar/desmarcar
 Destino: /Users/usuario/.claude/skills
 Total de skills a instalar: 3
 
-analisis-diseno-y-arquitectura
+analisis-design-architecture
   • adr-writer
   • pattern-finder
 
-calidad-y-seguridad
+quality-and-security
   • owasp-guardian
 
 ? ¿Proceder con la instalación? (Y/n)
@@ -137,9 +137,9 @@ calidad-y-seguridad
   ⚙️  INSTALANDO SKILLS
 ═══════════════════════════════════════════════════════════
 
-✓ analisis-diseno-y-arquitectura/adr-writer
-✓ analisis-diseno-y-arquitectura/pattern-finder
-✓ calidad-y-seguridad/owasp-guardian
+✓ analisis-design-architecture/adr-writer
+✓ analisis-design-architecture/pattern-finder
+✓ quality-and-security/owasp-guardian
 
 ═══════════════════════════════════════════════════════════
   ✨ ¡INSTALACIÓN COMPLETADA!
