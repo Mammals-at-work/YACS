@@ -54,11 +54,11 @@ jobs:
           body: |
             # Release ${{ github.ref_name }}
 
-            Published to GitHub Packages as `@munchkin09/yacs-installer`.
+            Published to GitHub Packages as `@munchkin09/yacs`.
 
             ## Installation
             ```bash
-            npm install @munchkin09/yacs-installer
+            npm install @munchkin09/yacs
             ```
 
             Or clone the repository and run:

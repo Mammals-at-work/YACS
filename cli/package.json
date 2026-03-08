@@ -1,7 +1,7 @@
 {
-  "name": "@munchkin09/yacs-installer",
+  "name": "@munchkin09/yacs",
   "version": "1.0.0",
-  "description": "Interactive CLI installer for YACS skills",
+  "description": "Interactive CLI installer for Y.A.C.S. (Yet Another Claude Skills)",
   "type": "module",
   "bin": {
     "yacs": "./install.js"
@@ -23,12 +23,14 @@
     "yacs",
     "skills",
     "installer",
-    "cli"
+    "cli",
+    "claude",
+    "codex"
   ],
-  "author": "",
+  "author": "Carlos L",
   "license": "MIT",
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=24.0.0"
   },
   "dependencies": {
     "inquirer": "^13.3.0"
