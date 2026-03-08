@@ -47,8 +47,10 @@ describe('Skills Directory', () => {
       });
 
       skills.forEach((skill) => {
-        const skillMdPath = path.join(categoryPath, skill, 'SKILL.md');
-        expect(fs.existsSync(skillMdPath)).toBe(true);
+        const skillPath = path.join(categoryPath, skill);
+        const filesInSkill = fs.readdirSync(skillPath);
+        const hasSkillManifest = filesInSkill.some((file) => file.toLowerCase() === 'skill.md');
+        expect(hasSkillManifest).toBe(true);
       });
     });
   });
