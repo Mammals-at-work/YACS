@@ -1,10 +1,10 @@
 {
   "name": "@mammals-at-work/yacs",
-  "version": "0.8.7",
+  "version": "0.8.8",
   "description": "Interactive CLI installer for Y.A.C.S. (Yet Another Claude Skills)",
   "type": "module",
   "bin": {
-    "yacs": "./install.js"
+    "yacs": "install.js"
   },
   "repository": {
     "type": "git",
