@@ -41,7 +41,7 @@ jobs:
           npm version "$VERSION" --no-git-tag-version
 
       - name: Publish npm package
-        run: npm publish
+        run: npm publish --access public
       
       - name: Create Release
         uses: softprops/action-gh-release@v1
