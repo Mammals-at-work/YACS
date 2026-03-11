@@ -52,7 +52,7 @@ yacs
 ### Opsiòn 3: Desde el repositorio
 
 ```bash
-git clone https://github.com/munchkin09/YACS.git
+git clone https://github.com/Mammals-at-work/YACS.git
 cd YACS/cli
 npm install
 npm start

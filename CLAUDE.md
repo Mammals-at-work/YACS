@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Details
 
-- **Remote:** https://github.com/munchkin09/YACS.git
+- **Remote:** https://github.com/Mammals-at-work/YACS.git
 - **Primary branch:** main
 - **Platform:** Windows (case-insensitive filesystem, symlinks disabled, Git LFS configured)
 - **Language:** Spanish may be used in documentation and skill descriptions
